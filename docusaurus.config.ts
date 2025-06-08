@@ -8,7 +8,7 @@ const config: Config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
-  url: "https://github.com",
+  url: "https://mohsenkh75.github.io/",
   baseUrl: "/mohan-doc/",
   organizationName: "mohsenKh75", // Usually your GitHub org/user name.
   projectName: "mohan-doc", // Usually your repo name.
