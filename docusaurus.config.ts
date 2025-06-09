@@ -5,15 +5,14 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Mohan Docs",
   favicon: "img/favicon.ico",
   url: "https://github.com",
   baseUrl: "/mohan-doc/",
   organizationName: "mohsenKh75", // Usually your GitHub org/user name.
   projectName: "mohan-doc", // Usually your repo name.
   deploymentBranch: "gh-pages",
-
+  plugins: ["@docusaurus/plugin-pwa"],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
