@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Mohan Docs",
   favicon: "img/favicon.ico",
-  url: "https://github.com",
+  url: "https://mohsenkh75.github.io",
   baseUrl: "/mohan-doc/",
   organizationName: "mohsenKh75", // Usually your GitHub org/user name.
   projectName: "mohan-doc", // Usually your repo name.
