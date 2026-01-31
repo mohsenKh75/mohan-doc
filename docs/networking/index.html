@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-networking" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Networking for Beginners | Mohan Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mohsenkh75.github.io/mohan-doc/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://mohsenkh75.github.io/mohan-doc/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://mohsenkh75.github.io/mohan-doc/docs/networking"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Networking for Beginners | Mohan Docs"><meta data-rh="true" name="description" content="The Data Link Layer is responsible for the reliable transfer of data within a local network. It handles communication between devices that are directly connected on the same network."><meta data-rh="true" property="og:description" content="The Data Link Layer is responsible for the reliable transfer of data within a local network. It handles communication between devices that are directly connected on the same network."><link data-rh="true" rel="icon" href="/mohan-doc/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mohsenkh75.github.io/mohan-doc/docs/networking"><link data-rh="true" rel="alternate" href="https://mohsenkh75.github.io/mohan-doc/docs/networking" hreflang="en"><link data-rh="true" rel="alternate" href="https://mohsenkh75.github.io/mohan-doc/docs/networking" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Networking for Beginners","item":"https://mohsenkh75.github.io/mohan-doc/docs/networking"}]}</script><link rel="alternate" type="application/rss+xml" href="/mohan-doc/blog/rss.xml" title="Mohan Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/mohan-doc/blog/atom.xml" title="Mohan Docs Atom Feed"><link rel="stylesheet" href="/mohan-doc/assets/css/styles.75c3d5a2.css">
+<script src="/mohan-doc/assets/js/runtime~main.c409a7dd.js" defer="defer"></script>
+<script src="/mohan-doc/assets/js/main.6c14bb78.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/mohan-doc/img/me.jpg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/mohan-doc/"><div class="navbar__logo"><img src="/mohan-doc/img/me.jpg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/mohan-doc/img/me.jpg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Mohan Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/mohan-doc/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/mohan-doc/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/mohan-doc/docs/intro">intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/mohan-doc/docs/networking">Networking for Beginners</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/mohan-doc/docs/stack-vs-heap">Stack vs Heap</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/mohan-doc/docs/void in js">void in js</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/mohan-doc/docs/web-component">Web Components</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/mohan-doc/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Networking for Beginners</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Data Link Layer</h1></header>
+<p>The Data Link Layer is responsible for the reliable transfer of data within a local network. It handles communication between devices that are directly connected on the same network.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-responsibilities">Key Responsibilities<a href="#key-responsibilities" class="hash-link" aria-label="Direct link to Key Responsibilities" title="Direct link to Key Responsibilities">​</a></h2>
+<ul>
+<li>Uses MAC (Media Access Control) addresses to identify devices on a local network.</li>
+<li>Encapsulates network layer packets into frames.</li>
+<li>Ensures data is delivered to the correct physical device (NIC).</li>
+<li>Works only within the local network (LAN).</li>
+</ul>
+<p><strong>Example:</strong>
+When a data packet enters a local network, the Data Link Layer uses the destination MAC address to deliver the data to the correct host.</p>
+<h1>Transport Layer</h1>
+<p>The Transport Layer is responsible for providing end-to-end communication between applications running on different devices. It ensures that data is delivered correctly, in order, and according to the required level of reliability.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="services-provided-by-the-transport-layer">Services Provided by the Transport Layer<a href="#services-provided-by-the-transport-layer" class="hash-link" aria-label="Direct link to Services Provided by the Transport Layer" title="Direct link to Services Provided by the Transport Layer">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-connection-oriented-service-tcp">1. Connection-Oriented Service (TCP)<a href="#1-connection-oriented-service-tcp" class="hash-link" aria-label="Direct link to 1. Connection-Oriented Service (TCP)" title="Direct link to 1. Connection-Oriented Service (TCP)">​</a></h3>
+<ul>
+<li>A connection is established before data transfer begins.</li>
+<li>Data is transmitted in three phases:<!-- -->
+<ol>
+<li>Connection establishment</li>
+<li>Data transfer</li>
+<li>Connection termination</li>
+</ol>
+</li>
+<li>The receiver sends acknowledgements (ACKs) for received packets.</li>
+<li>Lost packets are retransmitted.</li>
+<li>Provides reliable, ordered, and error-checked delivery.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Web browsing (HTTP/HTTPS)</li>
+<li>File downloads</li>
+<li>Email services</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-connection-less-service-udp">2. Connection-Less Service (UDP)<a href="#2-connection-less-service-udp" class="hash-link" aria-label="Direct link to 2. Connection-Less Service (UDP)" title="Direct link to 2. Connection-Less Service (UDP)">​</a></h3>
+<ul>
+<li>No connection is established before data transmission.</li>
+<li>Data is sent without acknowledgements.</li>
+<li>Faster communication with lower overhead.</li>
+<li>Does not guarantee delivery, order, or error correction.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Video and voice calls (VoIP)</li>
+<li>Online gaming</li>
+<li>Live streaming</li>
+<li>DNS queries</li>
+</ul>
+<hr>
+<hr>
+<h1>Summary</h1>
+<ul>
+<li><strong>Transport Layer</strong> focuses on application-to-application communication and reliability.</li>
+<li><strong>Data Link Layer</strong> focuses on device-to-device communication within a local network using MAC addresses.</li>
+</ul>
+<h1>Presentation Layer</h1>
+<p>The Presentation Layer is also known as the <strong>translation layer</strong>. It is responsible for preparing data received from the Application Layer so that it can be properly transmitted over the network and correctly understood by the receiving system.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions-of-the-presentation-layer">Functions of the Presentation Layer<a href="#functions-of-the-presentation-layer" class="hash-link" aria-label="Direct link to Functions of the Presentation Layer" title="Direct link to Functions of the Presentation Layer">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-translation">1. Translation<a href="#1-translation" class="hash-link" aria-label="Direct link to 1. Translation" title="Direct link to 1. Translation">​</a></h3>
+<p>This function converts data from one format to another to ensure compatibility between different systems.</p>
+<ul>
+<li>Different computers may use different data representation formats.</li>
+<li>The Presentation Layer translates data into a common format.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>ASCII and EBCDIC are character encoding formats.</li>
+<li>A system using ASCII can communicate with a system using EBCDIC because the Presentation Layer performs the necessary translation.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-encryption-and-decryption">2. Encryption and Decryption<a href="#2-encryption-and-decryption" class="hash-link" aria-label="Direct link to 2. Encryption and Decryption" title="Direct link to 2. Encryption and Decryption">​</a></h3>
+<p>This function ensures data security during transmission.</p>
+<ul>
+<li><strong>Encryption</strong> converts readable data into an unreadable coded form before transmission.</li>
+<li><strong>Decryption</strong> converts the encrypted data back into its original readable form at the receiver.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Secure web communication (HTTPS)</li>
+<li>Passwords and sensitive data are encrypted before being sent over the network.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary-1">Summary<a href="#summary-1" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<ul>
+<li>The Presentation Layer handles data formatting and security.</li>
+<li>It ensures that data is readable and secure between communicating systems.</li>
+<li>It acts as a translator and security layer between the Application Layer and lower layers.</li>
+</ul>
+<h1>VLAN (Virtual Local Area Network)</h1>
+<p><strong>VLAN</strong> stands for <strong>Virtual Local Area Network</strong>.<br>
+<!-- -->It allows you to create multiple <strong>virtual networks</strong> on a single <strong>physical network</strong> without adding extra cables or hardware.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-vlan">What is VLAN?<a href="#what-is-vlan" class="hash-link" aria-label="Direct link to What is VLAN?" title="Direct link to What is VLAN?">​</a></h2>
+<ul>
+<li>A VLAN separates devices logically into different groups.</li>
+<li>Devices in one VLAN cannot directly communicate with devices in another VLAN unless routing is configured.</li>
+<li>Uses the same physical switches and cables.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Accounting Department → VLAN 10</li>
+<li>IT Department → VLAN 20</li>
+<li>Sales Department → VLAN 30</li>
+</ul>
+<p>Even if all devices connect to the same switch, they act like they are on separate networks.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advantages-of-vlan">Advantages of VLAN<a href="#advantages-of-vlan" class="hash-link" aria-label="Direct link to Advantages of VLAN" title="Direct link to Advantages of VLAN">​</a></h2>
+<ol>
+<li><strong>Improved Security</strong>
+<ul>
+<li>Traffic stays within the VLAN; other groups cannot access it.</li>
+</ul>
+</li>
+<li><strong>Reduced Network Traffic</strong>
+<ul>
+<li>Packets are only sent to devices in the same VLAN.</li>
+</ul>
+</li>
+<li><strong>Better Organization</strong>
+<ul>
+<li>Logical grouping without changing physical connections.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-vlan-works">How VLAN Works<a href="#how-vlan-works" class="hash-link" aria-label="Direct link to How VLAN Works" title="Direct link to How VLAN Works">​</a></h2>
+<ul>
+<li>Requires a <strong>managed switch</strong>.</li>
+<li>Each port on the switch is assigned to a VLAN.</li>
+<li>Devices connected to a port become part of that VLAN.</li>
+<li>The switch ensures packets are delivered only to the correct VLAN members.</li>
+</ul>
+<h1>DHCP (Dynamic Host Configuration Protocol)</h1>
+<p><strong>DHCP</strong> is a protocol that automatically assigns <strong>IP addresses</strong> and network settings to devices on a network, without manual configuration.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-dhcp-works">How DHCP Works<a href="#how-dhcp-works" class="hash-link" aria-label="Direct link to How DHCP Works" title="Direct link to How DHCP Works">​</a></h2>
+<ol>
+<li>
+<p><strong>Device joins network</strong></p>
+<ul>
+<li>Example: laptop or smartphone connects to Wi-Fi</li>
+<li>Sends a <strong>DHCP Discover</strong> message: &quot;Hello! I need an IP.&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>DHCP Server responds</strong></p>
+<ul>
+<li>Sends a <strong>DHCP Offer</strong> with:<!-- -->
+<ul>
+<li>IP address</li>
+<li>Subnet mask</li>
+<li>Gateway</li>
+<li>DNS server</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Device requests the offered IP</strong></p>
+<ul>
+<li>Sends <strong>DHCP Request</strong>: &quot;I accept this IP.&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Server confirms</strong></p>
+<ul>
+<li>Sends <strong>DHCP ACK</strong>, finalizing the assignment</li>
+<li>Device starts using the IP</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-points">Key Points<a href="#key-points" class="hash-link" aria-label="Direct link to Key Points" title="Direct link to Key Points">​</a></h2>
+<ul>
+<li><strong>Dynamic IP:</strong> The IP may change after the lease time expires.</li>
+<li><strong>Lease Time:</strong> Duration for which the IP is valid.</li>
+<li><strong>Static IP:</strong> You can also assign a fixed IP manually if needed.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-in-daily-life">Example in Daily Life<a href="#example-in-daily-life" class="hash-link" aria-label="Direct link to Example in Daily Life" title="Direct link to Example in Daily Life">​</a></h2>
+<ul>
+<li>When your phone connects to Wi-Fi, it automatically gets an IP from the DHCP server in your router.</li>
+<li>No need to manually type an IP or network info.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="static-ip-option">Static IP Option<a href="#static-ip-option" class="hash-link" aria-label="Direct link to Static IP Option" title="Direct link to Static IP Option">​</a></h2>
+<ol>
+<li>
+<p><strong>On the device:</strong></p>
+<ul>
+<li>Go to Wi-Fi settings → Advanced → IP settings → Static</li>
+<li>Enter desired IP, Gateway, Subnet Mask, and DNS</li>
+</ul>
+</li>
+<li>
+<p><strong>On the router (DHCP Reservation):</strong></p>
+<ul>
+<li>Assign a fixed IP to the device’s MAC address</li>
+<li>Ensures the device always gets the same IP automatically</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Summary:</strong></p>
+<ul>
+<li>DHCP = automatic IP assignment</li>
+<li>Makes network setup easy, fast, and reduces errors</li>
+<li>Static IP can be set for devices needing a permanent address</li>
+</ul>
+<h1>NAT &amp; PAT</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="nat-network-address-translation">NAT (Network Address Translation)<a href="#nat-network-address-translation" class="hash-link" aria-label="Direct link to NAT (Network Address Translation)" title="Direct link to NAT (Network Address Translation)">​</a></h2>
+<p><strong>NAT</strong> is a method that translates <strong>private IP addresses</strong> inside a local network to a <strong>public IP address</strong> for communication on the Internet, and vice versa.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-nat-is-needed">Why NAT is needed<a href="#why-nat-is-needed" class="hash-link" aria-label="Direct link to Why NAT is needed" title="Direct link to Why NAT is needed">​</a></h3>
+<ul>
+<li>Home or office networks use private IPs:</li>
+<li>Internet requires public IPs.</li>
+<li>NAT acts as a translator between private and public IPs.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example">Example<a href="#example" class="hash-link" aria-label="Direct link to Example" title="Direct link to Example">​</a></h3>
+<p><strong>Home network:</strong></p>
+<ul>
+<li>Laptop: 192.168.1.10</li>
+<li>Mobile: 192.168.1.11</li>
+<li>Router (NAT): 203.0.113.5 ← Public IP</li>
+</ul>
+<p><strong>Flow:</strong></p>
+<ol>
+<li>Laptop requests Google website</li>
+<li>NAT translates 192.168.1.10 → 203.0.113.5</li>
+<li>Google responds to 203.0.113.5</li>
+<li>NAT translates back to 192.168.1.10</li>
+</ol>
+<p>✅ All devices appear as a single public IP on the Internet.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pat-port-address-translation">PAT (Port Address Translation)<a href="#pat-port-address-translation" class="hash-link" aria-label="Direct link to PAT (Port Address Translation)" title="Direct link to PAT (Port Address Translation)">​</a></h2>
+<p><strong>PAT</strong> is a type of NAT that translates both <strong>IP addresses and port numbers</strong>, allowing multiple devices to share a single public IP simultaneously.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-1">Example<a href="#example-1" class="hash-link" aria-label="Direct link to Example" title="Direct link to Example">​</a></h3>
+<table><thead><tr><th>Device</th><th>Private IP</th><th>Source Port</th><th>Public IP</th><th>NAT Port</th></tr></thead><tbody><tr><td>Laptop</td><td>192.168.1.10</td><td>5000</td><td>203.0.113.5</td><td>10001</td></tr><tr><td>Mobile</td><td>192.168.1.11</td><td>5000</td><td>203.0.113.5</td><td>10002</td></tr></tbody></table>
+<ul>
+<li>Internet sees only 203.0.113.5</li>
+<li>NAT uses different ports to distinguish devices</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="current-usage">Current Usage<a href="#current-usage" class="hash-link" aria-label="Direct link to Current Usage" title="Direct link to Current Usage">​</a></h2>
+<ul>
+<li>✅ NAT and PAT are <strong>widely used</strong> today:</li>
+<li>Home routers</li>
+<li>Office networks</li>
+<li>Data centers</li>
+<li>Essential because <strong>public IPs are limited</strong></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary-2">Summary<a href="#summary-2" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<table><thead><tr><th>Feature</th><th>NAT</th><th>PAT</th></tr></thead><tbody><tr><td>Translates</td><td>IP only</td><td>IP + Port</td></tr><tr><td>Purpose</td><td>Allow private devices to access the Internet</td><td>Allow multiple devices to share a single public IP</td></tr><tr><td>Usage today</td><td>Yes</td><td>Yes, supported by all modern devices</td></tr></tbody></table>
+<p><strong>Daily example:</strong></p>
+<ul>
+<li>When your laptop and phone connect to Wi-Fi and browse the Internet simultaneously, NAT and PAT handle all the translation in the background.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/networking.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/mohan-doc/docs/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">intro</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/mohan-doc/docs/stack-vs-heap"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Stack vs Heap</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#key-responsibilities" class="table-of-contents__link toc-highlight">Key Responsibilities</a></li><li><a href="#services-provided-by-the-transport-layer" class="table-of-contents__link toc-highlight">Services Provided by the Transport Layer</a><ul><li><a href="#1-connection-oriented-service-tcp" class="table-of-contents__link toc-highlight">1. Connection-Oriented Service (TCP)</a></li><li><a href="#2-connection-less-service-udp" class="table-of-contents__link toc-highlight">2. Connection-Less Service (UDP)</a></li></ul></li><li><a href="#functions-of-the-presentation-layer" class="table-of-contents__link toc-highlight">Functions of the Presentation Layer</a><ul><li><a href="#1-translation" class="table-of-contents__link toc-highlight">1. Translation</a></li><li><a href="#2-encryption-and-decryption" class="table-of-contents__link toc-highlight">2. Encryption and Decryption</a></li></ul></li><li><a href="#summary-1" class="table-of-contents__link toc-highlight">Summary</a></li><li><a href="#what-is-vlan" class="table-of-contents__link toc-highlight">What is VLAN?</a></li><li><a href="#advantages-of-vlan" class="table-of-contents__link toc-highlight">Advantages of VLAN</a></li><li><a href="#how-vlan-works" class="table-of-contents__link toc-highlight">How VLAN Works</a></li><li><a href="#how-dhcp-works" class="table-of-contents__link toc-highlight">How DHCP Works</a></li><li><a href="#key-points" class="table-of-contents__link toc-highlight">Key Points</a></li><li><a href="#example-in-daily-life" class="table-of-contents__link toc-highlight">Example in Daily Life</a></li><li><a href="#static-ip-option" class="table-of-contents__link toc-highlight">Static IP Option</a></li><li><a href="#nat-network-address-translation" class="table-of-contents__link toc-highlight">NAT (Network Address Translation)</a><ul><li><a href="#why-nat-is-needed" class="table-of-contents__link toc-highlight">Why NAT is needed</a></li><li><a href="#example" class="table-of-contents__link toc-highlight">Example</a></li></ul></li><li><a href="#pat-port-address-translation" class="table-of-contents__link toc-highlight">PAT (Port Address Translation)</a><ul><li><a href="#example-1" class="table-of-contents__link toc-highlight">Example</a></li></ul></li><li><a href="#current-usage" class="table-of-contents__link toc-highlight">Current Usage</a></li><li><a href="#summary-2" class="table-of-contents__link toc-highlight">Summary</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/mohan-doc/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/mohan-doc/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

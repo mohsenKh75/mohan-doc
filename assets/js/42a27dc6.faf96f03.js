@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmohan_doc=globalThis.webpackChunkmohan_doc||[]).push([[6738],{3150(o){o.exports=JSON.parse('{"metadata":{"permalink":"/mohan-doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
