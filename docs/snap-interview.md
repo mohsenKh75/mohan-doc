@@ -138,3 +138,78 @@ so in this case:
 }
 ```
 the flex basis wins.
+
+- diff between .freeze and .seal: with seal we cant add or rm props but we can modify values. with freeze we cant add/rm or modify. but both of them are shallow.
+- diff between for in and for of: for of loops in the values but for in loops in index. therefor its recommended to use for in for lopping through objects (to get keys):
+```
+const user = {
+  name: "John",
+  age: 25
+};
+
+for (const key in user) {
+  console.log(key);
+}
+```
+so use for in for objs and for of for arrays.
+
+- diff between shallow copy and deep: shallow copy, copies the obj at the first level only. and not the nested obj in there. so the copied obj at first level has a different refference from the base, but the nested obj in it has same reference with the base obj.
+
+- how closure could cause memory leak? normally with closure we can keep the reference of a variable for using somewhere else, if for any reason we're referencing to smth that we don't need, that variable can scape garbage collection. 
+```
+function createHandler() {
+  const hugeData = new Array(1_000_000).fill("data");
+
+  return function () {
+    console.log(hugeData.length);
+  };
+}
+
+const handler = createHandler();
+```
+- the diff between null and undfined: generally undefined is not an assignment, its de-asigning but when using null, we're actually assigning it to a variable. a cheat in react prop: asigin a prop to null will prevent the related component to use its default value.
+
+## About react
+- what is pure component: its a component that only re-renders if its props have changed. pure components do a shallow comparison inside their props to control changes. in class component we achieved this with:
+```
+class User extends React.PureComponent {
+  render() {
+    return <div>{this.props.name}</div>;
+  }
+}
+```
+and in function comps with memo:
+```
+const User = React.memo(function User({ name }) {
+  return <div>{name}</div>;
+});
+```
+
+- the diff between babel and SWC: both are transpiler and convert JSX-TSX to js that browser understands but:
+babel written in js - SWC written in rust and is much faster. SWC is newer and its plugins and ecosystem is a little smaller. SWC is used in Next by default. it supports ts like babel but doesn't type-check typscript and must do manually by tcs --noEmit. means it understand ts: when your write: ```const name: string = "John";``` it converts it to ```const name = "John";``` but it doesn't check if the types are okay.
+
+- what is controlled and uncontrolled comps: controlled comp is when the react controls the comp but when we let dom directly controls it we have uncontrolled comp:
+```
+//controlled comp:
+
+function Form(){
+  function Form() {
+  const [name, setName] = useState("");
+
+  return (
+    <input
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+  );
+}
+
+//uncontrolled comp:
+
+  const inputRef = useRef<HTMLInputElement>(null);
+console.log(inputref.current.value)
+  return (
+    <input ref={inputRef} />
+  );
+
+```
