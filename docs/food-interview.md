@@ -116,3 +116,5 @@ if (typeof value === "string") {
   console.log(value.toUpperCase()) // ✅
 }
 ```
+- dep inversion: a principle of SOLID: high level code/modules shouldn't depend directly on low-level code. 
+- what is peer dep: when the installing pack expect that the host app it self provides a specific pack, it defines that pack as peer dep. for example MUI has the react as its peer dep. so the react will not be installed again just for that lib. 
