@@ -59,3 +59,31 @@ for _, animal := range animals {
 
 //both Cat and Dog are using same interface but each one use it in its own way.
 ```
+more realistic example: consider a payment page which accept multiple payment methods (we have a PaymentMethod interface which has a PayWith method and this method defines and works differently in each payment method type ):
+
+```
+type PaymentMethod interface {
+    Pay(amount int)
+}
+
+type CreditCard struct{}
+
+func (c CreditCard) Pay(amount int) {
+    fmt.Println("Paid by credit card:", amount)
+}
+
+type PayPal struct{}
+
+func (p PayPal) Pay(amount int) {
+    fmt.Println("Paid by PayPal:", amount)
+}
+
+//usage:
+func Checkout(payment PaymentMethod) {
+    payment.Pay(100)
+}
+
+Checkout(CreditCard{})
+Checkout(PayPal{})
+
+```
